@@ -1,0 +1,23 @@
+
+
+.page-item{
+    padding: 2px !important;
+}
+.page-link{
+    height: 27px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px !important;
+    color: rgba(0, 0, 0, 0.705) !important;
+    border-radius: 4px;
+    font-size: small !important;
+}
+
+.spacing button{
+border: 0 !important;
+}
+.spacing button:hover{
+    background-color: #fff !important;
+    cursor: text !important;
+}

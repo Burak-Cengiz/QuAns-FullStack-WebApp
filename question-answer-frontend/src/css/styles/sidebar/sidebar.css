@@ -1,0 +1,234 @@
+body {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left-sidebar {
+  width: 165px;
+}
+
+.sidebar {
+  background: #fff;
+
+  top: 56px;
+  z-index: 1;
+}
+.left-sidebar {
+  margin-left: 185px;
+  position: fixed;
+  padding-top: 24px;
+  overflow-y: auto;
+}
+
+.left-sidebar ul {
+  display: flex; /* Öğeleri yatay düzende sıralamak için */
+  justify-content: flex-start;
+}
+.left-sidebar-icon {
+  width: 20px;
+  height: 20px;
+}
+.left-sidebar-content {
+  padding-left: 6px;
+  font-size: 13px;
+}
+
+.pb24 {
+  width: 100%;
+  padding-bottom: 41px;
+}
+
+.left-sidebar ul li a {
+  display: flex;
+  color: black;
+  padding: 8px;
+  text-decoration: none;
+  width: 147px;
+  height: 33px;
+}
+
+.sidebar ul li a div {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.sidebar ul li a:hover {
+  color: #0000;
+  margin-left: 20px;
+  transition: 0.4s;
+}
+
+.r-div {
+  width: 300px;
+  margin-left: 5px;
+}
+
+.right-sidebar {
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: hsl(43, 85%, 72%);
+  border-radius: 4px;
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+}
+
+.right-header {
+  font-weight: bold;
+  font-size: 12px;
+  background-color: #faecc6;
+  padding: 12px 15px;
+  margin-bottom: 5px;
+}
+
+.right-item {
+  font-size: small;
+  margin: 12px 0;
+  padding: 0 16px;
+}
+
+.r-icon {
+  margin-right: 10px;
+}
+.r-icon-io {
+  width: 14px;
+  height: 14px;
+}
+
+/* Header'ların ilk ve sonunda çizgiler */
+.right-header {
+  border-top: 1px solid hsl(43, 85%, 72%);
+  border-bottom: 1px solid hsl(43, 85%, 72%);
+}
+
+.r-div ul {
+  background-color: #fff2da;
+}
+
+.sidebar-survey {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.sidebar-survey h5 {
+  margin:0;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+.sidebar-survey .IoIoAdd{
+  font-weight: bold;
+  width: 16px;
+  height: 16px;
+  color: black;
+  margin-right: 10px;
+}
+.sidebar-survey form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-survey label {
+  margin-bottom: 10px;
+}
+
+.sidebar-survey select {
+  width: 90%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.custom-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.custom-select option {
+  font-size: 13px;
+  opacity: 0.7; /* Saydamlık eklemek için */
+  
+}
+.custom-select::-ms-expand {
+  display: none;
+}
+
+.custom-select-wrapper::after {
+  content: "▼";
+  font-size: 12px;
+  color: #333;
+  position: absolute;
+  right: 20px;
+  top: 60%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.sidebar-survey button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 1px;
+  width: 90%;
+}
+
+.sidebar-survey button:hover {
+  background-color: #0056b3;
+  
+}
+@media (max-width: 1500px) {
+  .left-sidebar {
+    margin-left: 100px;
+  }
+}
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1200px) {
+  .left-sidebar {
+    margin-left: 80px;
+  }
+}
+
+@media (min-width: 950px) {
+}
+@media (max-width: 950px) {
+  .r-div {
+    width: 98%;
+  }
+  .left-sidebar {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 650px) {
+  .left-sidebar {
+    display: none;
+  }
+  .r-div {
+    width: 98%;
+  }
+}

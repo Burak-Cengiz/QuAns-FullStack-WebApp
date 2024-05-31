@@ -1,0 +1,321 @@
+.navv {
+  width: 100%;
+  z-index: 1000;
+  height: 50px;
+  background-color: rgb(5, 0, 0);
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.topbar-content {
+  color: #e1e4e9;
+  font-size: 23px;
+  font-weight: 700;
+}
+.topbar-icon {
+  color: rgb(0, 252, 63);
+}
+.track-list-item a {
+  color: #e1e4e9;
+  font-size: 13px;
+  padding: 6px 12px;
+}
+.nav-container {
+  max-width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.track-list {
+  margin: 0;
+  padding: 2px 0;
+  height: 100%;
+}
+.topbar {
+  padding: 0 8px;
+  height: 100%;
+  align-items: center;
+}
+.topbar span {
+  padding: 0 4px;
+}
+
+.track-list li {
+  list-style-type: none;
+}
+.topbar-searchbar {
+  position: relative;
+  width: 600px;
+  height: 48px;
+  align-items: center;
+  margin-left: 1px;
+}
+
+.searchbar-input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  width: 97%;
+}
+.searchbar-input::placeholder {
+  font-size: 13px; /* İstediğiniz boyuta göre ayarlayın */
+  position: relative;
+  top: -2px;
+  color: #888; /* Placeholder yazısının rengini de değiştirebilirsiniz */
+}
+
+.topbar-searchbar .searchbar-input {
+  border: 0.8px solid hsl(210, 9%, 75%);
+  border-radius: 4px;
+  padding: 6px 9px 6px 32px; /* Iconun genişliğine göre ayarlayın */
+  width: 100%;
+  box-sizing: border-box;
+}
+.search-icon {
+  position: absolute;
+  left: 10px; /* Iconun input içindeki konumunu ayarlayın */
+  pointer-events: none; /* Input alanının tıklanabilirliğini engellemez */
+  width: 20px;
+  height: 20px;
+}
+.topbar-right-nav {
+  height: 100%;
+}
+.topbar-right {
+  margin: 0;
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+.topbar-right-item {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.topbar-right-item:not(:first-child) {
+  background: none;
+  border: 1px solid transparent !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.topbar-right-item:not(:first-child):hover {
+  background-color: hsl(0, 0%, 95%);
+  border-color: hsl(210, 9%, 75%) !important;
+  border-radius: 4px; /* Köşeleri yuvarlatın, isteğe bağlı */
+  
+}
+.topbar-right-item:not(:first-child):hover .inbox{
+
+  color: black; 
+}
+.topbar-right-item:not(:first-child):hover .inbox-value{
+
+  color: black !important; 
+}
+.topbar-right-item:not(:first-child):hover button{
+
+  color: black !important; 
+}
+.topbar-toggleSearch {
+  padding: 0;
+}
+
+.topbar-right-item button {
+  background: none;
+  border: none !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: #e1e4e9;
+}
+
+.topbar-right-item button:hover {
+  background-color: hsl(0, 0%, 95%);
+  border-color: hsl(210, 9%, 75%) !important;
+  border-radius: 4px;
+  color: black;
+}
+
+.form-expanded {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 8px 12px;
+  background-color: hsl(210, 8%, 90%);
+}
+.hover {
+  background: none;
+  border: 1px solid transparent !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.hover:hover {
+  background-color: hsl(0, 0%, 95%);
+  border-color: hsl(210, 9%, 75%) !important;
+  border-radius: 4px; /* Köşeleri yuvarlatın, isteğe bağlı */
+}
+.hover:hover a{
+  color: black;
+}
+.hover:hover .topbar-content{
+  color: black !important;
+}
+.hover:hover .topbar-icon svg{
+  color: rgba(0, 172, 9, 0.753) !important;
+}
+.form-search-button {
+  background: none;
+  border: 1px solid transparent !important;
+  padding: 0 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.form-search-button:hover {
+  background-color: hsl(0, 0%, 95%);
+  border-color: hsl(210, 9%, 75%) !important;
+  border-radius: 4px; /* Köşeleri yuvarlatın, isteğe bağlı */
+  
+}
+.form-search-button:hover svg{
+  
+  color: black !important;
+}
+.form-search-button svg {
+  width: 24px; /* İkonun boyutunu ayarlayın */
+  height: 24px;
+}
+
+.topbar-right-item-usercard {
+  color: inherit;
+  padding: 0 12px !important;
+}
+
+.usercard-avatar svg {
+  color: #e1e4e9;
+  width: 24px;
+  height: 24px;
+}
+
+.usercard-info {
+  width: 30px;
+  height: 14px;
+}
+
+.usercard-info-list {
+  list-style-type: none;
+  padding: 0 0 0 2px;
+  width: 100%;
+  height: 100%;
+}
+.usercard-info-list li {
+  display: flex;
+  align-items: center;
+}
+.usercard-info-list li span {
+  color: #e1e4e9;
+  line-height: 1;
+}
+.usercard-reputation {
+  font-weight: 750;
+  font-size: 12px;
+}
+
+.ludot {
+  color: #e1e4e9;
+  width: 24px;
+  height: 24px;
+  margin-right: -5px;
+}
+.usercard-notice {
+  font-weight: 300;
+  font-size: 12px;
+  color: #e1e4e9 !important;
+}
+
+.inbox {
+  color: #e1e4e9;
+  width: 22px;
+  height: 22px;
+}
+
+/* Orta genişlikteki ekranlar için kurallar */
+@media (max-width: 1200px) {
+  .nav-container {
+    margin-left: 80px;
+  }
+}
+@media (max-width: 950px) {
+  .nav-container {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 650px) {
+  .topbar-content {
+    display: none;
+  }
+  .track-list-item:not(:first-child) {
+    display: none;
+  }
+
+  .form-search-button {
+    display: block;
+    height: 100%;
+  }
+  .usercard-reputation {
+    display: none;
+  }
+  .card-notice span {
+    display: none;
+  }
+  .usercard-info {
+    display: none !important;
+    width: 0;
+    height: 0;
+  }
+  .topbar-right-nav {
+    margin-left: calc(100% - 400px);
+  }
+  
+}
+
+@media (min-width: 650px) {
+  .form-search-button {
+    display: none !important;
+  }
+}
+/* Geniş ekranlar için kurallar */
+
+@media (min-width: 950px) {
+  .nav-container {
+    /* Bu medya sorguda herhangi bir stil tanımlanmamış */
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-container {
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .nav-container {
+    margin-left: 185px;
+  }
+}

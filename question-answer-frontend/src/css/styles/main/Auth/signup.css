@@ -1,0 +1,98 @@
+.signup-main {
+  position: relative;
+  margin-top: 49px;
+  user-select: none;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dde5f4;
+  height: 100%;
+}
+
+.screen-2 {
+  margin: 50px 0;
+  background: #f1f7fe;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 0 2em #e6e9f9;
+  gap: 2em; /* Genel gap ayarı */
+}
+
+.screen-2 .logo {
+  margin-bottom: -3em; /* Logo altındaki boşluğu özelleştiriyoruz */
+  margin-top: -3em;
+}
+
+.screen-2 .name,
+.screen-2 .email,
+.screen-2 .password,
+.screen-2 .role {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+}
+
+.screen-2 .name input,
+.screen-2 .email input,
+.screen-2 .password input,
+.screen-2 .role select {
+  outline: none;
+  border: none;
+  width: 100%; /* Select Role yazısının tüm alanı kaplaması için */
+  font-size: 0.9em; /* Yazının boyutunu biraz küçültüyoruz */
+  color: rgba(0, 0, 0, 0.5); /* Yarı saydam yazı rengi */
+}
+
+.screen-2 .name input::placeholder,
+.screen-2 .email input::placeholder,
+.screen-2 .password input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.screen-2 .role select option {
+  font-size: 1em; /* Seçeneklerin boyutunu ayarlıyoruz */
+  padding: 0.5em; /* Seçeneklerin iç boşluğunu ayarlıyoruz */
+  background: #f1f7fe;
+}
+
+.screen-2 .name ion-icon,
+.screen-2 .email ion-icon,
+.screen-2 .password ion-icon,
+.screen-2 .role ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -0.2em;
+}
+
+.screen-2 .password .show-hide {
+  margin-right: -5em;
+}
+
+.screen-2 .signup {
+  padding: 1em;
+  background: #3e4684;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.screen-2 .footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7em;
+  color: #5e5e5e;
+  gap: 14em;
+  padding-bottom: 6em;
+}
+
+.screen-2 .footer span {
+  cursor: pointer;
+}

@@ -1,0 +1,232 @@
+.question-list-main {
+  margin-top: 78px;
+  height: 800px;
+}
+.main.with-line {
+  position: relative;
+}
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.main.with-line .flex-item h1 {
+  font-size: 30px;
+  margin: 0 0 0 2vh;
+  font-weight: normal;
+}
+
+.main.with-line .flex-item .btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #0577ce;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 4px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  text-decoration: none;
+}
+
+.main.with-line .flex-item .btn:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+  text-decoration: none;
+  color: #ffffff;
+}
+.main.with-line .flex-item .btn:active {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+/* Question List kısmı */
+
+.flush-left {
+  border-top: 1px solid #ccc;
+  margin-top: 50px;
+}
+.flush-left .list-group-item {
+  padding: 20px 20px;
+}
+
+.post-summary .post-summary-stats {
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 4px;
+  margin-right: 16px;
+}
+
+.post-summary .post-summary-stats-item {
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+}
+.post-summary .post-summary-stats-item-number {
+  font-weight: 500;
+  color: hsl(209, 14%, 38%);
+  font-size: small;
+}
+
+.post-summary .post-summary-stats-item-unit {
+  font-family: "Times New Roman", serif;
+  color: hsl(209, 14%, 38%);
+  font-weight: 900;
+}
+
+.post-summary .post-summary-content .post-summary-content-meta {
+  justify-content: space-between;
+}
+
+.post-summary .post-summary-content .post-summary-content-title {
+  font-size: 19px;
+  font-family: "Times New Roman", serif;
+  margin-top: -0.15rem;
+  margin-bottom: 0.2rem;
+  padding-right: 24px;
+  font-weight: 550;
+}
+.post-summary .post-summary-content .post-summary-content-title a {
+  color: #4d99e9;
+}
+
+.post-summary
+  .post-summary-content
+  .post-summary-content-meta
+  .post-summary-content-meta-tags
+  ul
+  li {
+  list-style-type: none;
+  margin-right: 4px !important;
+}
+.post-summary
+  .post-summary-content
+  .post-summary-content-meta
+  .post-summary-content-meta-tags
+  ul {
+  padding: 0;
+}
+.post-summary
+  .post-summary-content
+  .post-summary-content-meta
+  .post-summary-content-meta-tags
+  a {
+  font-size: 12px;
+  display: inline-block;
+  padding: 0.4em 0.5em;
+  margin: 0 2px 2px 0;
+  line-height: 1;
+  white-space: nowrap;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  color: hsl(210, 77%, 36%);
+  background-color: hsl(210, 80%, 96%);
+  border-color: transparent;
+}
+
+.meta-usercard-userlink {
+  font-size: 12px;
+  margin: 2px;
+}
+
+.post-summary-content-meta-usercard {
+  align-items: center;
+}
+.meta-usercard-time {
+  font-family: serif;
+  font-size: 12px;
+  margin: 4px 2px 2px 2px;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 1px;
+  right: 50px;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1500px) {
+  .question-list-main {
+    margin-left: 265px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .question-list-main {
+    margin-left: 245px;
+  }
+  .main.with-line::after {
+    left: 245px;
+  }
+}
+
+@media (max-width: 950px) {
+  .question-list-main {
+    width: calc(100% - 165px);
+    margin-left: 165px;
+  }
+  .main.with-line {
+    width: 100%;
+  }
+  .main.with-line .flex-item .btn {
+    margin-right: 0;
+  }
+  .main.with-line .flush-left {
+    margin-right: 0;
+  }
+  .main.with-line::after {
+    left: 165px;
+  }
+  .pagination {
+    bottom: 1px;
+    right: 50px;
+  }
+}
+@media (max-width: 650px) {
+  .question-list-main {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .main.with-line {
+    width: 100%;
+  }
+}
+
+@media (min-width: 650px) {
+  .main.with-line::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ccc;
+  }
+}
+@media (min-width: 950px) {
+  .main.with-line .flex-item .btn {
+    margin-right: 70px;
+  }
+  .main.with-line .flush-left {
+    margin-right: 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+@media (min-width: 1500px) {
+  .question-list-main {
+    margin-left: 350px;
+  }
+  .main.with-line::after {
+    left: 350px;
+  }
+}

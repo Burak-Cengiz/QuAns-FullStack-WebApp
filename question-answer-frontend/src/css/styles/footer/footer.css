@@ -1,0 +1,15 @@
+.footer-ct {
+  background-color: black;
+  margin-top: 5px !important;
+
+}
+
+.year {
+    justify-content: end !important;
+  }
+  
+  @media (max-width: 575px) {
+    .year {
+      justify-content: start !important;
+    }
+  }

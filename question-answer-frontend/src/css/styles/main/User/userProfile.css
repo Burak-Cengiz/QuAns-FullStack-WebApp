@@ -1,0 +1,15 @@
+/* src/css/userProfile.css */
+.userprofile-main{
+  position: relative;
+  top: 50px;
+  left:350px;
+  border-left: 1px solid #ccc;
+  height: 100%;
+}
+.userprofile-div{
+  position: relative;
+  margin: 0 !important;
+  padding-top: 24px;
+}
+
+  
